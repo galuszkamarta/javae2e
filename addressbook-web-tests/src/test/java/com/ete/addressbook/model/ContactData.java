@@ -1,4 +1,4 @@
-package com.ete.addressbook;
+package com.ete.addressbook.model;
 
 public class ContactData {
   private final String firstname;
