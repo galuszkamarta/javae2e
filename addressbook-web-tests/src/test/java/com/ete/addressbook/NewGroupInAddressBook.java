@@ -40,7 +40,7 @@ public class NewGroupInAddressBook {
   }
 
   @Test
-  public void testLogin() throws Exception {
+  public void testNewGroupInAddressBook() throws Exception {
     goToNewContactInAddressBook();
     fillNewContactInAddressBookForm("marta", "ggg", "Wood Street 1\nLiverpool\nN11 3NN", "79664529222", "mar@niepodam.com");
     submitNewContactInAddressBookCreation();
