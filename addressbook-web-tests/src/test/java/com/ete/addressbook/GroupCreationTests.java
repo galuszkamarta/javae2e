@@ -1,5 +1,3 @@
-
-
 package com.ete.addressbook;
 
 import org.openqa.selenium.Alert;
