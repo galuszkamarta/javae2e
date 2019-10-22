@@ -1,11 +1,12 @@
-package com.ete.addressbook;
+package com.ete.addressbook.tests;
 
 /**
- * Created by g on 2019-10-22.
+ * Created by m on 2019-10-22.
  */
 
 import java.util.concurrent.TimeUnit;
 
+import com.ete.addressbook.model.ContactData;
 import org.testng.annotations.*;
 
 import static org.testng.Assert.*;

@@ -1,4 +1,4 @@
-package com.ete.addressbook;
+package com.ete.addressbook.model;
 
 public class GroupData {
   private final String name;
