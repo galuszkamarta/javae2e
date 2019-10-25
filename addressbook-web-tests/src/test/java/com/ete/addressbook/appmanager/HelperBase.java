@@ -5,7 +5,7 @@ import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
- * Created by g on 2019-10-22.
+ * Created by m on 2019-10-22.
  */
 public class HelperBase {
   protected FirefoxDriver driver;
