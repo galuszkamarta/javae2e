@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeClass;
  */
 public class TestBase {
 
-  protected final ApplicationManager app = new ApplicationManager(BrowserType.IE);
+  protected final ApplicationManager app = new ApplicationManager(BrowserType.CHROME);
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {

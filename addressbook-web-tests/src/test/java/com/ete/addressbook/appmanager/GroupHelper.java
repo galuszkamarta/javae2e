@@ -31,7 +31,7 @@ public class GroupHelper extends HelperBase {
   }
 
   public void initGroupCreation() {
-    click(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='wada'])[7]/following::input[1]"));
+    click(By.xpath("//input[@value='New group']"));
   }
 
   public void deleteSelectedGroups() {

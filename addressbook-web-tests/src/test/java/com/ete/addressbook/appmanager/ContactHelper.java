@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
- * Created by g on 2019-10-24.
+ * Created by m on 2019-10-24.
  */
 public class ContactHelper  extends HelperBase {
 
