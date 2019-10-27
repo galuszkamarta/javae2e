@@ -3,6 +3,7 @@ package com.ete.addressbook.appmanager;
 import com.ete.addressbook.model.ContactData;
 import com.ete.addressbook.model.GroupData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
@@ -10,7 +11,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  */
 public class GroupHelper extends HelperBase {
 
-  public GroupHelper(FirefoxDriver driver) {
+  public GroupHelper(WebDriver driver) {
 
     super(driver);
   }

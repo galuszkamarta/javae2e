@@ -2,6 +2,7 @@ package com.ete.addressbook.appmanager;
 
 import com.ete.addressbook.model.ContactData;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
@@ -9,7 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
  */
 public class ContactHelper  extends HelperBase {
 
-  public ContactHelper(FirefoxDriver driver) {
+  public ContactHelper(WebDriver driver) {
     super(driver);
   }
   public void fillContactForm(ContactData contactData){

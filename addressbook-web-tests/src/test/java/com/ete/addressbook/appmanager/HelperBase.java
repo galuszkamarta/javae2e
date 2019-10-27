@@ -2,15 +2,17 @@ package com.ete.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 /**
  * Created by m on 2019-10-22.
  */
 public class HelperBase {
-  protected FirefoxDriver driver;
+  protected WebDriver driver;
 
-  public HelperBase(FirefoxDriver driver) {
+  public HelperBase(WebDriver driver) {
     this.driver = driver;
   }
 
