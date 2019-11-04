@@ -9,18 +9,18 @@ import org.testng.Assert;
 /**
  * Created by m on 2019-10-24.
  */
-public class ContactHelper  extends HelperBase {
+public class ContactHelper extends HelperBase {
 
   public ContactHelper(WebDriver driver) {
     super(driver);
   }
 
-  public void InitContactCreation() {
+  public void initContactCreation() {
 
     click(By.linkText("add new"));
   }
 
-  public void fillContactForm(ContactData contactData, boolean creation){
+  public void fillContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getFirstname());
     type(By.name("lastname"), contactData.getLastname());
 
@@ -39,7 +39,6 @@ public class ContactHelper  extends HelperBase {
 
 
   public void returnToHomePage() {
-
     click(By.linkText("home page"));
   }
 
@@ -62,7 +61,23 @@ public class ContactHelper  extends HelperBase {
   }
 
 
-  public void deleteSelectedContact() {
+  public void   deleteSelectedContact() {
     click(By.xpath("//input[@value='Delete']"));
+
   }
+
+
+  public void createContact(ContactData contactData, boolean b) {
+    initContactCreation();
+    fillContactForm(contactData , b);
+    submitContactCreation();
+    returnToHomePage();
+  }
+
+
+  public boolean isThereAConact() {
+    return isElementPresent(By.xpath("//input[@name='selected[]']"));
+  }
+
 }
+
