@@ -78,7 +78,7 @@ public class NewGroupInAddressBook {
     driver.findElement(By.name("lastname")).click();
     driver.findElement(By.name("lastname")).clear();
     driver.findElement(By.name("lastname")).sendKeys(contactData.getLastname());
-    driver.findElement(By.name("address")).click();
+   /* driver.findElement(By.name("address")).click();
     driver.findElement(By.name("address")).clear();
     driver.findElement(By.name("address")).sendKeys(contactData.getAddress());
     driver.findElement(By.name("home")).click();
@@ -87,6 +87,7 @@ public class NewGroupInAddressBook {
     driver.findElement(By.name("email")).click();
     driver.findElement(By.name("email")).clear();
     driver.findElement(By.name("email")).sendKeys(contactData.getEmail());
+  */
   }
 
   private void goToNewGroupInAddressBook() {
