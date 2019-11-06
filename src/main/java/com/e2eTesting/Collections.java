@@ -15,7 +15,7 @@ public class Collections {
       System.out.println("I would like to learn lang " + l + ".");
     }
 
-    List<String> languages = Arrays.asList( "Python", "PHP");
+    List<String> languages = Arrays.asList("Python", "PHP");
 
     for (String l : languages) {
       System.out.println("I would like to learn lang " + l + ".");
