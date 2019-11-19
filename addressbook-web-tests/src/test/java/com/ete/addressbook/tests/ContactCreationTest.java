@@ -1,7 +1,6 @@
 package com.ete.addressbook.tests;
 
 import com.ete.addressbook.model.ContactData;
-import com.ete.addressbook.model.GroupData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +14,7 @@ public class ContactCreationTest extends TestBase {
 
   @Test(enabled = false)
   public void testContactCreation (){
-    app.getNavigationHelper().goToHomePage();
+    app.goTo().goToHomePage();
     List<ContactData> before = app.getContactHelper().getContactList();
 
     ContactData contactData = new ContactData("marta", "ggg", "test1");

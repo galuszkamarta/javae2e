@@ -1,7 +1,6 @@
 package com.ete.addressbook.tests;
 
 import com.ete.addressbook.model.ContactData;
-import com.ete.addressbook.model.GroupData;
 import org.testng.annotations.Test;
 
 /**
@@ -10,7 +9,7 @@ import org.testng.annotations.Test;
 public class ContactDeletionTest extends TestBase {
   @Test(enabled = false)
   public void testContactDeletion() {
-    app.getNavigationHelper().goToHomePage();
+    app.goTo().goToHomePage();
     if (!app.getContactHelper().isThereAConact()) {
       app.getContactHelper().createContact(new ContactData("marta", "ggg", "test1"), true);
     }
