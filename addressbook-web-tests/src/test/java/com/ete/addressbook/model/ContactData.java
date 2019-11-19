@@ -1,22 +1,31 @@
 package com.ete.addressbook.model;
 
 public class ContactData {
+  private int id;
   private final String firstname;
-  private final String secondname;
+  private final String lastname;
   private String group;
-  // private final String lastname;
- // private final String address;
- // private final String home;
-  // private final String email;
 
-  public ContactData(String firstname, String secondname, String group) {
+  public ContactData(String firstname, String lastname, String group) {
+    this.id = Integer.MAX_VALUE;
     this.firstname = firstname;
-    this.secondname = secondname;
-    // this.lastname = lastname;
-    // this.address = address;
-    // this.home = home;
-    // this.email = email;
+    this.lastname = lastname;
     this.group = group;
+  }
+
+  public ContactData(int id, String firstname, String lastname, String group) {
+    this.id = id;
+    this.firstname = firstname;
+    this.lastname = lastname;
+    this.group = group;
+  }
+
+  public int getId() {
+    return id;
+  }
+
+  public void setId(int id) {
+    this.id = id;
   }
 
   public String getFirstname() {
@@ -24,25 +33,41 @@ public class ContactData {
   }
 
   public String getLastname() {
-    return secondname;
-  }
-
-  public String getGroup(){return group;}
-
-  /*public String getLastname() {
     return lastname;
   }
 
-  public String getAddress() {
-    return address;
+  public String getGroup() {
+    return group;
   }
 
-  public String getHome() {
-    return home;
+  @Override
+  public String toString() {
+    return "ContactData{" +
+            "id=" + id +
+            ", firstname='" + firstname + '\'' +
+            ", lastname='" + lastname + '\'' +
+            '}';
   }
 
-public String getEmail() {
-    return email;
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || getClass() != o.getClass()) return false;
+
+    ContactData that = (ContactData) o;
+
+    if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
+    return lastname != null ? lastname.equals(that.lastname) : that.lastname == null;
   }
- */
+
+  @Override
+  public int hashCode() {
+    int result = firstname != null ? firstname.hashCode() : 0;
+    result = 31 * result + (lastname != null ? lastname.hashCode() : 0);
+    return result;
+  }
 }
+
+
+
+
