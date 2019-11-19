@@ -40,7 +40,7 @@ public class NewGroupInAddressBook {
     driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Password:'])[1]/following::input[2]")).click();
   }
 
-  @Test
+  @Test(enabled = false)
   public void testNewGroupInAddressBook() throws Exception {
     goToNewContactInAddressBook();
     fillNewContactInAddressBookForm("marta", "ggg", "Wood Street 1\nLiverpool\nN11 3NN", "79664529222", "mar@niepodam.com");

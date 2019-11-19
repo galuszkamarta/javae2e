@@ -8,10 +8,10 @@ import org.testng.annotations.Test;
  * Created by m on 2019-10-24.
  */
 public class ContactDeletionTest extends TestBase {
-  @Test
+  @Test(enabled = false)
   public void testContactDeletion() {
     app.getNavigationHelper().goToHomePage();
-    if(! app.getContactHelper().isThereAConact()) {
+    if (!app.getContactHelper().isThereAConact()) {
       app.getContactHelper().createContact(new ContactData("marta", "ggg", "test1"), true);
     }
     app.getContactHelper().selectContact();
