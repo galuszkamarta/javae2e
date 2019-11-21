@@ -11,6 +11,18 @@ public class GroupData {
     return id;
   }
 
+  public String getName() {
+    return name;
+  }
+
+  public String getHeader() {
+    return header;
+  }
+
+  public String getFooter() {
+    return footer;
+  }
+
   public GroupData withId(int id) {
     this.id = id;
     return this;
@@ -30,20 +42,6 @@ public class GroupData {
     this.footer = footer;
     return this;
   }
-
-
-  public String getName() {
-    return name;
-  }
-
-  public String getHeader() {
-    return header;
-  }
-
-  public String getFooter() {
-    return footer;
-  }
-
 
 
   @Override

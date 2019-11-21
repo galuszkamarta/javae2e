@@ -1,33 +1,27 @@
 package com.ete.addressbook.tests;
 
-import com.ete.addressbook.model.ContactData;
-import org.testng.Assert;
+import com.ete.addressbook.model.GroupData;
+import com.ete.addressbook.model.Groups;
 import org.testng.annotations.Test;
 
-import java.util.Comparator;
-import java.util.List;
+import com.ete.addressbook.model.ContactData;
+import com.ete.addressbook.model.Contacts;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * Created by m on 2019-10-24.
  */
 public class ContactCreationTest extends TestBase {
 
-  @Test(enabled = false)
+  @Test
   public void testContactCreation (){
-    app.goTo().goToHomePage();
-    List<ContactData> before = app.getContactHelper().getContactList();
-
-    ContactData contactData = new ContactData("marta", "ggg", "test1");
-    app.getContactHelper().createContact(contactData, true);
-    List<ContactData> after = app.getContactHelper().getContactList();
-    Assert.assertEquals(after.size(), before.size() + 1);
-
-    before.add(contactData);
-    Comparator<? super ContactData> byId = (c1, c2) -> Integer.compare(c1.getId(), c2.getId());
-    before.sort(byId);
-    after.sort(byId);
-    Assert.assertEquals(before, after);
+    app.goTo().homePage();
+    Contacts before = app.contact().all();
+    ContactData contact = new ContactData().withFirstName("fafa").withLastName("fwafa").withGroup("test1");
+    app.contact().create(contact);
+    Contacts after = app.contact().all();
+    assertThat (after.size(), equalTo(before.size() + 1));
   }
 }
-
-
