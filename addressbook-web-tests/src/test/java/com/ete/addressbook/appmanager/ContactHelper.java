@@ -1,15 +1,17 @@
 package com.ete.addressbook.appmanager;
 
 import com.ete.addressbook.model.ContactData;
+import com.ete.addressbook.model.Contacts;
 import com.ete.addressbook.model.GroupData;
+import com.ete.addressbook.model.Groups;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by m on 2019-10-24.
@@ -25,15 +27,13 @@ public class ContactHelper extends HelperBase {
     click(By.linkText("add new"));
   }
 
-  public void fillContactForm(ContactData contactData, boolean creation) {
+  public void fillContactForm(ContactData contactData) {
     type(By.name("firstname"), contactData.getFirstname());
     type(By.name("lastname"), contactData.getLastname());
 
 
-    if (creation) {
+    if (this.isElementPresent(By.name("new_group"))) {
       new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
-    } else {
-      Assert.assertFalse(isElementPresent(By.name("new_group")));
     }
   }
 
@@ -41,7 +41,6 @@ public class ContactHelper extends HelperBase {
 
     click(By.xpath("//input[@value='Enter']"));
   }
-
 
   public void returnToHomePage() {
     click(By.linkText("home page"));
@@ -60,28 +59,37 @@ public class ContactHelper extends HelperBase {
   }
 
 
-  public void selectContact() {
-
-    click(By.xpath("//input[@name='selected[]']"));
+  public void selectContactById(int id) {
+    driver.findElement(By.cssSelector("input[value='" + id + "']")).click();
   }
 
 
-  public void   deleteSelectedContact() {
+  public void deleteSelectedContact() {
     click(By.xpath("//input[@value='Delete']"));
-
+    Alert alert = driver.switchTo().alert();
+    alert.accept();
+    click(By.linkText("home"));
   }
 
 
-
-  public void createContact(ContactData contactData, boolean b) {
+  public void create(ContactData contact) {
     initContactCreation();
-    fillContactForm(contactData , b);
+    fillContactForm(contact);
     submitContactCreation();
     returnToHomePage();
   }
 
-  public void selectContact(int index) {
-    driver.findElements(By.name("selected[]")).get(index).click();
+  public void modify(ContactData contact) {
+    selectContactById(contact.getId());
+    initContactModification();
+    fillContactForm(contact);
+    submitContactModification();
+    returnToHomePage();
+  }
+
+  public void delete(ContactData contact) {
+    selectContactById(contact.getId());
+    deleteSelectedContact();
   }
 
 
@@ -90,8 +98,8 @@ public class ContactHelper extends HelperBase {
   }
   public int getContactCount() {
     return driver.findElements(By.xpath("//input[@name='selected[]']")).size();
-  }
-*/
+  }*/
+
   public boolean isThereAConact() {
     return isElementPresent(By.name("selected[]"));
   }
@@ -99,18 +107,17 @@ public class ContactHelper extends HelperBase {
     return driver.findElements(By.name("selected[]")).size();
   }
 
-  public List<ContactData> getContactList() {
-    List<ContactData> contacts = new ArrayList<ContactData>();
+
+  public Contacts all() {
+    Contacts contacts = new Contacts();
     List<WebElement> elements = driver.findElements(By.xpath("//tr[@name='entry']"));
-    for (WebElement element: elements) {
-      String name = element.getText();
-      String lastname = element.getText();
+    for (WebElement element : elements) {
+      String text = element.getText();
+      List<String> words = new ArrayList<String>(Arrays.asList(text.split(" ")));
       int id = Integer.parseInt(element.findElement(By.tagName("input")).getAttribute("value"));
-      ContactData contactData  = new ContactData(id, name, lastname, null);
-      contacts.add(contactData);
+      contacts.add(new ContactData().withId(id).withFirstName(words.get(0)).withLastName(words.get(1)).withGroup("test1"));
     }
     return contacts;
   }
 }
-
 
