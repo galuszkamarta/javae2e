@@ -1,10 +1,13 @@
 package com.ete.addressbook.model;
 
 public class ContactData {
-  private int id = Integer.MAX_VALUE;
+  private int id = Integer.MAX_VALUE;;
   private String firstname;
   private String lastname;
   private String group;
+  private String homePhone;
+  private String mobilePhone;
+  private String workPhone;
 
 
   public int getId() {
@@ -30,6 +33,22 @@ public class ContactData {
     this.group = group;
     return this;
   }
+
+  public ContactData withHomePhone(String homePhone) {
+    this.homePhone = homePhone;
+    return this;
+  }
+
+  public ContactData withMobilePhone(String mobilePhone) {
+    this.mobilePhone = mobilePhone;
+    return this;
+  }
+
+  public ContactData withWorkPhone(String workPhone) {
+    this.workPhone = workPhone;
+    return this;
+  }
+
   public String getFirstname() {
     return firstname;
   }
@@ -40,6 +59,17 @@ public class ContactData {
 
   public String getGroup() {
     return group;
+  }
+
+  public String getHomePhone() {
+    return homePhone;
+  }
+  public String getMobilePhone() {
+    return mobilePhone;
+  }
+
+  public String getWorkPhone() {
+    return workPhone;
   }
 
   @Override
@@ -59,8 +89,7 @@ public class ContactData {
     ContactData that = (ContactData) o;
 
     if (id != that.id) return false;
-
-
+    if (firstname != null ? !firstname.equals(that.firstname) : that.firstname != null) return false;
     return lastname != null ? lastname.equals(that.lastname) : that.lastname == null;
   }
 
