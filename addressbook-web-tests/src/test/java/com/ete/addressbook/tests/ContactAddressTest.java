@@ -11,10 +11,9 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
- * Created by m on 2019-11-22.
+ * Created by m on 2019-11-24.
  */
-
-public class ContactPhoneTests extends TestBase {
+public class ContactAddressTest extends TestBase {
 
   @BeforeMethod
   public void ensurePreconditions() {
@@ -25,23 +24,16 @@ public class ContactPhoneTests extends TestBase {
   }
 
   @Test
-  public void testContactPhones() {
+  public void testContactAddress() {
     ContactData contact = app.contact().all().iterator().next();
     ContactData contactInfoFromEditFrom = app.contact().infoFromEditFrom(contact);
-
-    assertThat(contact.getAllPhones(), equalTo(mergePhones(contactInfoFromEditFrom)));
+    assertThat(contact.getAddress(), equalTo(mergeAddress(contactInfoFromEditFrom)));
   }
 
-  private String mergePhones(ContactData contact) {
-    return Arrays.asList(contact.getHomePhone(), contact.getMobilePhone(), contact.getWorkPhone())
+ private String mergeAddress(ContactData contact) {
+    return Arrays.asList(contact.getAddress())
             .stream().filter((s) -> !s.equals(""))
-            .map(ContactPhoneTests::cleaned)
             .collect(Collectors.joining("\n"));
   }
 
-  public static String cleaned(String phone) {
-    return phone.replaceAll("\\s", "").replaceAll("[-()]", "");
-  }
 }
-
-
