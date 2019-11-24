@@ -1,9 +1,6 @@
 package com.ete.addressbook.appmanager;
 
 import com.ete.addressbook.model.ContactData;
-import com.ete.addressbook.model.Contacts;
-import com.ete.addressbook.model.GroupData;
-import com.ete.addressbook.model.Groups;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,7 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Created by m on 2019-10-24.
@@ -100,10 +99,9 @@ public class ContactHelper extends HelperBase {
     return isElementPresent(By.name("selected[]"));
   }
 
-  public int getContactCount() {
+  public int count() {
     return driver.findElements(By.name("selected[]")).size();
   }
-
 
   public Set<ContactData> all() {
     Set<ContactData> contacts = new HashSet<ContactData>();
@@ -113,9 +111,9 @@ public class ContactHelper extends HelperBase {
       int id = Integer.parseInt(cells.get(0).findElement(By.tagName("input")).getAttribute("value"));
       String lastname = cells.get(1).getText();
       String firstname = cells.get(2).getText();
-      String[] phones = cells.get(5).getText().split("\n");
-      //contacts.add(new ContactData().withId(id).withFirstName(firstname).withLastName(lastname));
-      contacts.add(new ContactData().withId(id).withFirstName(firstname).withLastName(lastname).withHomePhone(phones[0]).withMobilePhone(phones[1]).withWorkPhone(phones[2]));
+      String allPhones = cells.get(5).getText();
+      contacts.add(new ContactData().withId(id).withFirstName(firstname).withLastName(lastname)
+              .withAllPhones(allPhones));
     }
     return contacts;
   }
