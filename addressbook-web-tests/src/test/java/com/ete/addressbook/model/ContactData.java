@@ -9,6 +9,11 @@ public class ContactData {
   private String mobilePhone;
   private String workPhone;
   private String allPhones;
+  private String address;
+  private String email;
+  private String email2;
+  private String email3;
+  private String allEmails;
 
 
   public int getId() {
@@ -55,32 +60,70 @@ public class ContactData {
     return this;
   }
 
+  public ContactData withEmail(String email) {
+    this.email = email;
+    return this;
+  }
+
+  public ContactData withEmail2(String email2) {
+    this.email2 = email2;
+    return this;
+  }
+
+  public ContactData withEmail3(String email3) {
+    this.email3 = email3;
+    return this;
+  }
+  public ContactData withAllEmails(String allEmails) {
+    this.allEmails = allEmails;
+    return this;
+  }
+  public ContactData withAddress(String address) {
+    this.address = address;
+    return this;
+  }
+
+
+
   public String getFirstname() {
     return firstname;
   }
-
   public String getLastname() {
     return lastname;
   }
-
   public String getGroup() {
     return group;
   }
-
   public String getHomePhone() {
     return homePhone;
   }
   public String getMobilePhone() {
     return mobilePhone;
   }
-
   public String getWorkPhone() {
     return workPhone;
   }
-
   public String getAllPhones() {
     return allPhones;
   }
+  public String getEmail() {
+    return email;
+  }
+  public String getEmail2() {
+    return email2;
+  }
+  public String getEmail3() {
+    return email3;
+  }
+  public String getAllEmails() {
+    return allEmails;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+
   @Override
   public String toString() {
     return "ContactData{" +
