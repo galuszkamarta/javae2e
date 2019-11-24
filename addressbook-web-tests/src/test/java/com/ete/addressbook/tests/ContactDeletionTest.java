@@ -1,17 +1,12 @@
 package com.ete.addressbook.tests;
 
 import com.ete.addressbook.model.ContactData;
-import com.ete.addressbook.model.Contacts;
-import com.ete.addressbook.model.GroupData;
-import com.ete.addressbook.model.Groups;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.Set;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.hamcrest.MatcherAssert.assertThat;
 import static org.testng.Assert.assertEquals;
 
 /**
