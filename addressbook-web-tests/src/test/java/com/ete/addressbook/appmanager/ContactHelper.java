@@ -29,6 +29,7 @@ public class ContactHelper extends HelperBase {
   public void fillContactForm(ContactData contactData, boolean creation) {
     type(By.name("firstname"), contactData.getFirstname());
     type(By.name("lastname"), contactData.getLastname());
+    attach(By.name("photo"), contactData.getPhoto());
 
 
     if (creation) {
@@ -149,6 +150,24 @@ public class ContactHelper extends HelperBase {
     //driver.findElement(By.xpath(String.format("//tr[.//input[@value='%s']]/td[8]/a", id))).click();
     //driver.findElement(By.cssSelector(String.format("a[href='edit.php?id=%s", id))).click();
   }
+
+  public String infoFromDetailsPage(ContactData contact) {
+    initContactDetailsById(contact.getId());
+    String contactDetails = driver.findElement(By.xpath("//div[@id='content']/br")).getAttribute("textContent");
+//    String contactDetails = driver.findElement(By.cssSelector("#content")).getAttribute("textContent");
+
+    driver.navigate().back();
+
+    return contactDetails;
+  }
+
+  private void initContactDetailsById(int id) {
+    WebElement checkbox = driver.findElement(By.cssSelector(String.format("input[value='%s']", id)));
+    WebElement row = checkbox.findElement(By.xpath("./../.."));
+    List<WebElement> cells = row.findElements(By.tagName("td"));
+    cells.get(6).findElement(By.tagName("a")).click();
+  }
+
 }
 
 
