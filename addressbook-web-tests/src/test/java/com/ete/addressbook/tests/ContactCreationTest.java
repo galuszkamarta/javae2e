@@ -4,6 +4,7 @@ import com.ete.addressbook.model.ContactData;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.util.Set;
 
 /**
@@ -15,7 +16,8 @@ public class ContactCreationTest extends TestBase {
   public void testContactCreation (){
     app.goTo().homePage();
     Set<ContactData> before = app.contact().all();
-    ContactData contact = new ContactData().withFirstName("fafa").withLastName("fwafa").withGroup("test1");
+    File photo = new File("src/test/resources/stru.png");
+    ContactData contact = new ContactData().withFirstName("fafa").withLastName("fwafa").withPhoto(photo).withGroup("test1");
     app.contact().create(contact, true);
     Set<ContactData> after = app.contact().all();
 
@@ -23,5 +25,14 @@ public class ContactCreationTest extends TestBase {
     contact.withId(after.stream().mapToInt((g) -> g.getId()).max().getAsInt());
     before.add(contact);
     Assert.assertEquals(before, after);
+  }
+
+  @Test
+  public void testCurrentDir(){
+    File currentDir = new File(".");
+    System.out.println(currentDir.getAbsolutePath());
+    File photo = new File("src/test/resources/stru.png");
+    System.out.println(photo.getAbsolutePath());
+    System.out.println(photo.exists());
   }
 }
