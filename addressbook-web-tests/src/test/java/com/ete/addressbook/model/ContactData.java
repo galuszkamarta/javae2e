@@ -1,23 +1,32 @@
 package com.ete.addressbook.model;
 
+import com.google.gson.annotations.Expose;
+import com.thoughtworks.xstream.annotations.XStreamAlias;
+import com.thoughtworks.xstream.annotations.XStreamOmitField;
+
 import java.io.File;
 
+@XStreamAlias("contact")
 public class ContactData {
-  private int id = Integer.MAX_VALUE;;
+  @XStreamOmitField
+  private int id = Integer.MAX_VALUE;
+  @Expose
   private String firstname;
+  @Expose
   private String lastname;
+  @Expose
   private String group;
   private String homePhone;
   private String mobilePhone;
   private String workPhone;
   private String allPhones;
+  @Expose
   private String address;
   private String email;
   private String email2;
   private String email3;
   private String allEmails;
   private File photo;
-
 
 
   public int getId() {
@@ -78,58 +87,74 @@ public class ContactData {
     this.email3 = email3;
     return this;
   }
+
   public ContactData withAllEmails(String allEmails) {
     this.allEmails = allEmails;
     return this;
   }
+
   public ContactData withAddress(String address) {
     this.address = address;
     return this;
   }
+
   public ContactData withPhoto(File photo) {
     this.photo = photo;
     return this;
   }
 
 
-
   public String getFirstname() {
     return firstname;
   }
+
   public String getLastname() {
     return lastname;
   }
+
   public String getGroup() {
     return group;
   }
+
   public String getHomePhone() {
     return homePhone;
   }
+
   public String getMobilePhone() {
     return mobilePhone;
   }
+
   public String getWorkPhone() {
     return workPhone;
   }
+
   public String getAllPhones() {
     return allPhones;
   }
+
   public String getEmail() {
     return email;
   }
+
   public String getEmail2() {
     return email2;
   }
+
   public String getEmail3() {
     return email3;
   }
+
   public String getAllEmails() {
     return allEmails;
   }
+
   public String getAddress() {
     return address;
   }
-  public File getPhoto() { return photo; }
+
+  public File getPhoto() {
+    return photo;
+  }
 
 
   @Override
