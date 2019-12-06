@@ -8,10 +8,4 @@
             <class name="com.ete.addressbook.tests.GroupDeletionTests"/>
         </classes>
     </test>
-
-    <test name="Contacts">
-        <classes>
-            <class name="com.ete.addressbook.tests.ContactCreationTest"/>
-        </classes>
-    </test>
 </suite>
