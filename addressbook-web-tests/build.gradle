@@ -11,7 +11,8 @@ dependencies {
     compile 'org.hamcrest:java-hamcrest:2.0.0.0'
     compile 'com.beust:jcommander:1.48' // jcommander.org
     compile 'com.thoughtworks.xstream:xstream:1.4.8'// x-stream.github.io
-    compile 'com.google.code.gson:gson:2.6.1' //2.8.6
+    compile 'com.google.code.gson:gson:2.6.1'
+    compile 'ch.qos.logback:logback-classic:1.3.0-alpha5' //http://logback.qos.ch/manual/configuration.html
 }
 
 task testGroups(type: Test) {
