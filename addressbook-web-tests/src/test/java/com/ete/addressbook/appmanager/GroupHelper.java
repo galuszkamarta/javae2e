@@ -88,7 +88,7 @@ public class GroupHelper extends HelperBase {
     return driver.findElements(By.name("selected[]")).size();
   }
 
-  private Groups groupCache = null;
+  public Groups groupCache = null;
 
   public Groups all() {
     if (groupCache != null) {

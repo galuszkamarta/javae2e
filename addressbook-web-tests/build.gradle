@@ -9,5 +9,31 @@ dependencies {
     compile 'org.testng:testng:7.0.0'
     compile 'org.seleniumhq.selenium:selenium-java:4.0.0-alpha-3'
     compile 'org.hamcrest:java-hamcrest:2.0.0.0'
-    compile 'com.beust:jcommander:1.78' // jcommander.org
+    compile 'com.beust:jcommander:1.48' // jcommander.org
+    compile 'com.thoughtworks.xstream:xstream:1.4.8'// x-stream.github.io
+    compile 'com.google.code.gson:gson:2.6.1' //2.8.6
+}
+
+task testGroups(type: Test) {
+    useTestNG() {
+        suites 'src/test/resources/testng-groups.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
+}
+
+task testontacts(type: Test) {
+    useTestNG() {
+        suites 'src/test/resources/testng-contacts.xml'
+    }
+    if (project.hasProperty('browser')) {
+        systemProperty 'browser', "${browser}"
+    }
+    if (project.hasProperty('target')) {
+        systemProperty 'target', "${target}"
+    }
 }

@@ -1,0 +1,23 @@
+<list>
+  <contact>
+    <firstname>test 0</firstname>
+    <lastname>test 0</lastname>
+    <group>group 0</group>
+    <address>address
+0</address>
+  </contact>
+  <contact>
+    <firstname>test 1</firstname>
+    <lastname>test 1</lastname>
+    <group>group 1</group>
+    <address>address
+1</address>
+  </contact>
+  <contact>
+    <firstname>test 2</firstname>
+    <lastname>test 2</lastname>
+    <group>group 2</group>
+    <address>address
+2</address>
+  </contact>
+</list>
