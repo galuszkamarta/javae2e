@@ -13,6 +13,7 @@ dependencies {
     compile 'com.thoughtworks.xstream:xstream:1.4.8'// x-stream.github.io
     compile 'com.google.code.gson:gson:2.6.1'
     compile 'ch.qos.logback:logback-classic:1.3.0-alpha5' //http://logback.qos.ch/manual/configuration.html
+    compile 'mysql:mysql-connector-java:5.1.38' // https://dev.mysql.com/doc/connector-j/5.1/en/connector-j-usagenotes-connect-drivermanager.html
 }
 
 task testGroups(type: Test) {
