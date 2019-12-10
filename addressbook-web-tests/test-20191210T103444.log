@@ -1,0 +1,814 @@
+117  [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+140  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+142  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+145  [main] DEBUG o.h.i.i.IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+220  [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.1.0.Final}
+222  [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+222  [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist
+257  [main] DEBUG o.h.b.c.internal.JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+415  [main] DEBUG o.h.service.spi.ServiceBinding - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+435  [main] DEBUG o.h.c.i.RegionFactoryInitiator - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+445  [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+467  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@13b13b5d
+467  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@13b13b5d
+467  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@13b13b5d
+467  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@d6e7bab
+470  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@865dd6
+470  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@503d687a
+472  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1f97cf0d
+472  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@1f97cf0d
+472  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1f97cf0d
+475  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@77eca502
+475  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@77eca502
+475  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@77eca502
+477  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6b8ca3c8
+477  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@6b8ca3c8
+477  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@6b8ca3c8
+477  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@65f095f8
+477  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@65f095f8
+477  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@65f095f8
+480  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@62230c58
+480  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@62230c58
+480  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@62230c58
+482  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@c333c60
+482  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@c333c60
+482  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@c333c60
+485  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4e7912d8
+485  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@4e7912d8
+485  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@4e7912d8
+487  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@a3d8174
+487  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@a3d8174
+490  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@120f102b
+490  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@120f102b
+492  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@1e6454ec
+492  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@1e6454ec
+492  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@1613674b
+495  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@34f5090e
+495  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@1b6e1eff
+495  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@1b6e1eff
+497  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@5f9b2141
+497  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5f9b2141
+500  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@6d3a388c
+500  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@6d3a388c
+500  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@2fd1433e
+500  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@2fd1433e
+500  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@2fd1433e
+502  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@212b5695
+502  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@37654521
+502  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@37654521
+502  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@37654521
+505  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@4de4b452
+505  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@7ea9e1e2
+505  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@7ea9e1e2
+505  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@4d02f94e
+505  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@4d02f94e
+507  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@14555e0a
+507  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@14555e0a
+507  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@6f46426d
+510  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@6f46426d
+510  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@483f6d77
+510  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@483f6d77
+512  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@28f3b248
+512  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@57d7f8ca
+512  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@57d7f8ca
+512  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@57d7f8ca
+515  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@662b4c69
+515  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@662b4c69
+515  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@662b4c69
+515  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@3d6f0054
+517  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@25084a1e
+517  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@25084a1e
+517  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@25084a1e
+520  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@383bfa16
+520  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@383bfa16
+520  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@383bfa16
+520  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@4d0f2471
+522  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.NTextType@28f2a10f
+527  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@4738a206
+527  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@4738a206
+527  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1af2d44a
+532  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@6392827e
+532  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@6392827e
+535  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.NClobType@3a44431a
+535  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@3a44431a
+537  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@17497425
+537  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@ffaa6af
+537  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@1de5f259
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@3cebbb30
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@3cebbb30
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@67f639d3
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@6253c26
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@49049a04
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@71a8adcf
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@27462a88
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@82de64a
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@659499f1
+540  [main] DEBUG o.hibernate.type.BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@51e69659
+547  [main] WARN  org.hibernate.orm.connections - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+552  [main] INFO  org.hibernate.orm.connections - HHH10001005: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/addressbook]
+552  [main] INFO  org.hibernate.orm.connections - HHH10001001: Connection properties: {user=root, password=}
+552  [main] INFO  org.hibernate.orm.connections - HHH10001003: Autocommit mode: false
+555  [main] DEBUG o.h.e.j.c.i.DriverManagerConnectionProviderImpl - Initializing Connection pool with 1 Connections
+555  [main] INFO  o.h.e.j.c.i.DriverManagerConnectionProviderImpl - HHH000115: Hibernate connection pool size: 1 (min=1)
+742  [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 5.5.5-10.1.9-MariaDB
+      major : 5
+      minor : 5
+742  [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector Java
+    version : mysql-connector-java-5.1.38 ( Revision: fe541c166cec739c74cc727c5da96c1028b4834a )
+      major : 5
+      minor : 1
+742  [main] DEBUG o.h.e.j.e.i.JdbcEnvironmentInitiator - JDBC version : 4.0
+752  [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+765  [main] DEBUG o.h.e.j.c.i.StandardRefCursorSupport - Unexpected error trying to gauge level of JDBC REF_CURSOR support : null
+775  [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+777  [main] DEBUG o.h.e.j.e.s.IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [LOWER]; that will likely lead to problems in schema update and validation if using quoted identifiers
+807  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+810  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+810  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+810  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+810  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+810  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+810  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+812  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+812  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+812  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+812  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+812  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+812  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+815  [main] DEBUG o.h.i.f.i.DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+872  [main] DEBUG o.h.boot.model.relational.Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+892  [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.ete.addressbook.model.GroupData
+910  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+915  [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name GroupData
+917  [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.ete.addressbook.model.GroupData on table group_list
+935  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_id, insertable=true, updatable=true, unique=false}
+937  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+940  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.GroupData:id]
+940  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+940  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+945  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_footer, insertable=true, updatable=true, unique=false}
+945  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property footer with lazy=false
+945  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.GroupData:footer]
+945  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for footer
+945  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property footer
+945  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_header, insertable=true, updatable=true, unique=false}
+945  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property header with lazy=false
+945  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.GroupData:header]
+945  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for header
+945  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property header
+945  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(group_list), mappingColumn=group_name, insertable=true, updatable=true, unique=false}
+945  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property name with lazy=false
+945  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.GroupData:name]
+945  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for name
+945  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property name
+945  [main] DEBUG org.hibernate.cfg.AnnotationBinder - Binding entity from annotated class: com.ete.addressbook.model.ContactData
+945  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+945  [main] DEBUG o.h.cfg.annotations.EntityBinder - Import with entity name ContactData
+945  [main] DEBUG o.h.cfg.annotations.EntityBinder - Bind entity com.ete.addressbook.model.ContactData on table addressbook
+947  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=id, insertable=true, updatable=true, unique=false}
+947  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property id with lazy=false
+947  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:id]
+947  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for id
+947  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property id
+947  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=address, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property address with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:address]
+950  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for address
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property address
+950  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:email]
+950  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email
+950  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email2, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email2 with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:email2]
+950  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email2
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email2
+950  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=email3, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property email3 with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:email3]
+950  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for email3
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property email3
+950  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=firstname, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property firstname with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:firstname]
+950  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for firstname
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property firstname
+950  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=home, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property homePhone with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:homePhone]
+950  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for homePhone
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property homePhone
+950  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=lastname, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property lastname with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:lastname]
+950  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for lastname
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property lastname
+950  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=mobile, insertable=true, updatable=true, unique=false}
+950  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property mobilePhone with lazy=false
+950  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:mobilePhone]
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for mobilePhone
+952  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property mobilePhone
+952  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=photo, insertable=true, updatable=true, unique=false}
+952  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property photo with lazy=false
+952  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:photo]
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for photo
+952  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property photo
+952  [main] DEBUG org.hibernate.cfg.Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(addressbook), mappingColumn=work, insertable=true, updatable=true, unique=false}
+952  [main] DEBUG o.h.cfg.annotations.PropertyBinder - MetadataSourceProcessor property workPhone with lazy=false
+952  [main] DEBUG o.h.cfg.AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [com.ete.addressbook.model.ContactData:workPhone]
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - building SimpleValue for workPhone
+952  [main] DEBUG o.h.cfg.annotations.PropertyBinder - Building property workPhone
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for footer
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for header
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for name
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for id
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for address
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email2
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for email3
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for firstname
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for homePhone
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for lastname
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for mobilePhone
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for photo
+952  [main] DEBUG o.h.c.annotations.SimpleValueBinder - Starting fillSimpleValue for workPhone
+955  [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [group_id] to be non-null as it is part of the primary key for table [group_list]
+955  [main] DEBUG org.hibernate.mapping.PrimaryKey - Forcing column [id] to be non-null as it is part of the primary key for table [addressbook]
+977  [main] DEBUG o.h.internal.SessionFactoryImpl - Building session factory
+977  [main] DEBUG org.hibernate.cfg.Settings - SessionFactory name : null
+977  [main] DEBUG org.hibernate.cfg.Settings - Automatic flush during beforeCompletion(): disabled
+977  [main] DEBUG org.hibernate.cfg.Settings - Automatic session close at end of transaction: disabled
+977  [main] DEBUG org.hibernate.cfg.Settings - Statistics: disabled
+977  [main] DEBUG org.hibernate.cfg.Settings - Deleted entity synthetic identifier rollback: disabled
+977  [main] DEBUG org.hibernate.cfg.Settings - Default entity-mode: pojo
+977  [main] DEBUG org.hibernate.cfg.Settings - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+977  [main] DEBUG org.hibernate.cfg.Settings - Allow initialization of lazy state outside session : disabled
+977  [main] DEBUG org.hibernate.cfg.Settings - Using BatchFetchStyle : LEGACY
+980  [main] DEBUG org.hibernate.cfg.Settings - Default batch fetch size: -1
+980  [main] DEBUG org.hibernate.cfg.Settings - Maximum outer join fetch depth: 2
+980  [main] DEBUG org.hibernate.cfg.Settings - Default null ordering: NONE
+980  [main] DEBUG org.hibernate.cfg.Settings - Order SQL updates by primary key: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Order SQL inserts for batching: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - multi-tenancy strategy : NONE
+980  [main] DEBUG org.hibernate.cfg.Settings - JTA Track by Thread: enabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Query language substitutions: {}
+980  [main] DEBUG org.hibernate.cfg.Settings - JPA query language strict compliance: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Named query checking : enabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Second-level cache: enabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Second-level query cache factory: org.hibernate.cache.internal.StandardQueryCacheFactory@7a1a3478
+980  [main] DEBUG org.hibernate.cfg.Settings - Second-level cache region prefix: null
+980  [main] DEBUG org.hibernate.cfg.Settings - Optimize second-level cache for minimal puts: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Structured second-level cache entries: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Second-level cache direct-reference entries: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Automatic eviction of collection cache: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - JDBC batch size: 15
+980  [main] DEBUG org.hibernate.cfg.Settings - JDBC batch updates for versioned data: enabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Scrollable result sets: enabled
+980  [main] DEBUG org.hibernate.cfg.Settings - Wrap result sets: disabled
+980  [main] DEBUG org.hibernate.cfg.Settings - JDBC3 getGeneratedKeys(): enabled
+980  [main] DEBUG org.hibernate.cfg.Settings - JDBC result set fetch size: null
+980  [main] DEBUG org.hibernate.cfg.Settings - Connection release mode: ON_CLOSE
+980  [main] DEBUG org.hibernate.cfg.Settings - Generate SQL with comments: disabled
+1012 [main] DEBUG o.h.internal.SessionFactoryImpl - Session factory constructed with filter configurations : {}
+1015 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiating session factory with properties: {java.vendor=Oracle Corporation, show_sql=true, sun.java.launcher=SUN_STANDARD, hibernate.connection.url=jdbc:mysql://localhost:3306/addressbook, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, os.name=Windows 7, hbm2ddl.auto=validate, sun.boot.class.path=C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\classes, sun.desktop=windows, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_111-b14, user.name=g, connection.driver_class=com.mysql.jdbc.Driver, user.language=pl, sun.boot.library.path=C:\Program Files\Java\jdk1.8.0_111\jre\bin, dialect=org.hibernate.dialect.MySQLDialect, java.version=1.8.0_111, user.timezone=Europe/Belgrade, sun.arch.data.model=64, java.endorsed.dirs=C:\Program Files\Java\jdk1.8.0_111\jre\lib\endorsed, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1250, file.encoding.pkg=sun.io, file.separator=\, java.specification.name=Java Platform API Specification, java.class.version=52.0, user.country=PL, connection.url=jdbc:mysql://localhost:3306/addressbook, java.home=C:\Program Files\Java\jdk1.8.0_111\jre, java.vm.info=mixed mode, idea.test.cyclic.buffer.size=1048576, os.version=6.1, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@65fe9e33, path.separator=;, connection.password=, java.vm.version=25.111-b14, hibernate.connection.password=, user.variant=, java.awt.printerjob=sun.awt.windows.WPrinterJob, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.windows.WToolkit, hibernate.connection.username=root, user.script=, user.home=C:\Users\g, java.specification.vendor=Oracle Corporation, hibernate.hbm2ddl.auto=validate, java.library.path=C:\Program Files\Java\jdk1.8.0_111\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python34\;C:\Python34\Scripts;C:\Program Files\Java\jdk-11.0.4\bin;%JAVA_HOME%\bin;C:\ProgramData\Oracle\Java\javapath;C:\PROGRAM FILES (X86)\INTEL\ICLS CLIENT\;C:\PROGRAM FILES\INTEL\ICLS CLIENT\;C:\WINDOWS\SYSTEM32;C:\WINDOWS;C:\WINDOWS\SYSTEM32\WBEM;C:\WINDOWS\SYSTEM32\WINDOWSPOWERSHELL\V1.0\;C:\PROGRAM FILES\INTEL\WIFI\BIN\;C:\PROGRAM FILES\COMMON FILES\INTEL\WIRELESSCOMMON\;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\DAL;C:\PROGRAM FILES (X86)\INTEL\INTEL(R) MANAGEMENT ENGINE COMPONENTS\IPT;C:\PROGRAM FILES (X86)\NVIDIA CORPORATION\PHYSX\COMMON;E:\PROGRAM FILES\MACLEOD SIMMONDS\GPRCADPGSQL\BIN;C:\PROGRAM FILES\COMMON FILES\AUTODESK SHARED\;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;C:\Program Files\Git\cmd;C:\Program Files (x86)\Skype\Phone;E:\Android\sdk\/platform-tools;E:\Android\sdk\/tools;E:\nodejs\;%JAVA_HOME%\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\PowerShell\6\;C:\Ruby24-x64\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\g\AppData\Roaming\npm;., java.vendor.url=http://java.oracle.com/, hibernate.connection.driver_class=com.mysql.jdbc.Driver, connection.username=root, java.vm.vendor=Oracle Corporation, hibernate.dialect=org.hibernate.dialect.MySQLDialect, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.testng.RemoteTestNGStarter -usedefaultlisteners false -socket50015 @w@C:\Users\g\AppData\Local\Temp\idea_working_dirs_testng8560.tmp -temp C:\Users\g\AppData\Local\Temp\idea_testng10799.tmp, java.class.path=C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\plugins\testng\lib\testng-plugin.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_111\jre\lib\rt.jar;C:\Marta\e2eTesting\addressbook-web-tests\build\classes\test;C:\Marta\e2eTesting\addressbook-web-tests\build\resources\test;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.testng\testng\7.0.0\14b73f64988eda81a42b4584e9647d48633ef857\testng-7.0.0.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-java\4.0.0-alpha-3\c43b4c5d0f47c954fd7d40779aa1af215e1ea6bf\selenium-java-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.hamcrest\java-hamcrest\2.0.0.0\f1c8853ade0ecf707f5a261c830e98893983813\java-hamcrest-2.0.0.0.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.thoughtworks.xstream\xstream\1.4.8\520d90f30f36a0d6ba2dc929d980831631ad6a92\xstream-1.4.8.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.1\b9d63507329a7178e026fc334f87587ee5070ac5\gson-2.6.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-classic\1.3.0-alpha5\3195156aa3b62b2f4407a7841700f2759bebf192\logback-classic-1.3.0-alpha5.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\mysql\mysql-connector-java\5.1.38\dbbd7cd309ce167ec8367de4e41c63c2c8593cc5\mysql-connector-java-5.1.38.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.hibernate\hibernate-core\5.1.0.Final\1b5ac619df76cfd67222ca7cddcee6b0a5db8d0c\hibernate-core-5.1.0.Final.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-api\4.0.0-alpha-3\dfe422f572251cb5b2c534ba0fc11fab19afbf50\selenium-api-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chrome-driver\4.0.0-alpha-3\75b6fef517cdff403de688a35e4129de1070d1c2\selenium-chrome-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edge-driver\4.0.0-alpha-3\20047ba68fab57d1379553f172c24f552516768e\selenium-edge-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-edgehtml-driver\4.0.0-alpha-3\12881a7863752dc556a47b4944d0327bd8273878\selenium-edgehtml-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-driver\4.0.0-alpha-3\132322f6a7f221dddc9b8e89c5afd3a790717243\selenium-firefox-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-firefox-xpi-driver\4.0.0-alpha-3\e63e158d90cb947618cd0879905928562f64ec0b\selenium-firefox-xpi-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-ie-driver\4.0.0-alpha-3\b6a0c19734016945f186d7cfd8be5f933f091e\selenium-ie-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-opera-driver\4.0.0-alpha-3\71b484733680878dfa3187dde440d8c519494868\selenium-opera-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-remote-driver\4.0.0-alpha-3\e1f050997120e47d12819cdf8db5b260b75433bc\selenium-remote-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-safari-driver\4.0.0-alpha-3\c141131a43b4e47c9807c71340e6fdd422119905\selenium-safari-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-support\4.0.0-alpha-3\56fe30b7f8286d983937be744e1592429a80b1e7\selenium-support-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\xmlpull\xmlpull\1.1.3.1\2b8e230d2ab644e4ecaa94db7cdedbc40c805dfa\xmlpull-1.1.3.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\xpp3\xpp3_min\1.1.4c\19d4e90b43059058f6e056f794f0ea4030d60b86\xpp3_min-1.1.4c.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\ch.qos.logback\logback-core\1.3.0-alpha5\4f3163d95c96b7be69d9e5245573834fd130a4bb\logback-core-1.3.0-alpha5.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.0-alpha1\e979781e847d44d3618c4479d438956593b6b080\slf4j-api-2.0.0-alpha1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.sun.mail\javax.mail\1.6.2\935151eb71beff17a2ffac15dd80184a99a0514f\javax.mail-1.6.2.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\edu.washington.cs.types.checker\checker-framework\1.7.0\f652eb570f82dea2f7718c23f81b759c0c8e5ccf\checker-framework-1.7.0.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.jboss.logging\jboss-logging\3.3.0.Final\3616bb87707910296e2c195dc016287080bba5af\jboss-logging-3.3.0.Final.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.hibernate.javax.persistence\hibernate-jpa-2.1-api\1.0.0.Final\5e731d961297e5a07290bfaf3db1fbc8bbbf405a\hibernate-jpa-2.1-api-1.0.0.Final.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.javassist\javassist\3.20.0-GA\a9cbcdfb7e9f86fbc74d3afae65f2248bfbf82a0\javassist-3.20.0-GA.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\antlr\antlr\2.7.7\83cd2cd674a217ade95a4bb83a8a14f351f48bd0\antlr-2.7.7.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.apache.geronimo.specs\geronimo-jta_1.1_spec\1.1.1\aabab3165b8ea936b9360abbf448459c0d04a5a4\geronimo-jta_1.1_spec-1.1.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.jboss\jandex\2.0.0.Final\3e899258936f94649c777193e1be846387ed54b3\jandex-2.0.0.Final.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.fasterxml\classmate\1.3.0\183407ff982e9375f1a1c4a51ed0a9307c598fc7\classmate-1.3.0.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\dom4j\dom4j\1.6.1\5d3ccc056b6f056dbf0dddfdf43894b9065a8f94\dom4j-1.6.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.hibernate.common\hibernate-commons-annotations\5.0.1.Final\71e1cff3fcb20d3b3af4f3363c3ddb24d33c6879\hibernate-commons-annotations-5.0.1.Final.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\27.1-jre\e47b59c893079b87743cdcfb6f17ca95c08c592c\guava-27.1-jre.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-chromium-driver\4.0.0-alpha-3\e381572dd2bdf12d72f8d4d163b04d36168be20a\selenium-chromium-driver-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-devtools\4.0.0-alpha-3\40f4ef596fc8179edc36dff75a981a2e3072ad9c\selenium-devtools-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-http\4.0.0-alpha-3\42d2d579633c55a3de4170c397ea228dd2f055ba\selenium-http-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.seleniumhq.selenium\selenium-json\4.0.0-alpha-3\17afddd52d686a8b3620083e3f5ae209602c2da9\selenium-json-4.0.0-alpha-3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\4.0.1\4e606430c80c69b744d19c6ca1b269b68e297040\okhttp-4.0.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\io.opentracing\opentracing-api\0.33.0\67336cfb9d93779c02e1fda4c87801d352720eda\opentracing-api-0.33.0.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\net.bytebuddy\byte-buddy\1.9.12\39050dbbd36862ea87eb9a64158854b04619ccd6\byte-buddy-1.9.12.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-exec\1.3\8dfb9facd0830a27b1b5f29f84593f0aeee7773b\commons-exec-1.3.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\javax.activation\activation\1.1\e6cb541461c2834bdea3eb920f1884d1eb508b50\activation-1.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\xml-apis\xml-apis\1.0.b2\3136ca936f64c9d68529f048c2618bd356bf85c9\xml-apis-1.0.b2.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\2.5.2\cea74543d5904a30861a61b4643a5f2bb372efc4\checker-qual-2.5.2.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.2.0\88e3c593e9b3586e1c6177f89267da6fc6986f0c\error_prone_annotations-2.2.0.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.1\ed28ded51a8b1c6b112568def5f4b455e6809019\j2objc-annotations-1.1.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.codehaus.mojo\animal-sniffer-annotations\1.17\f97ce6decaea32b36101e37979f8b647f00681fb\animal-sniffer-annotations-1.17.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\2.2.2\36f483536153f15339a8b48d508e22be7c9c531a\okio-2.2.2.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.3.40\b8a521c687329303778548e2f09b0ba5b2665236\kotlin-stdlib-1.3.40.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\com.beust\jcommander\1.72\6375e521c1e11d6563d4f25a07ce124ccf8cd171\jcommander-1.72.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.3.40\ff8f3da514fc2877d1303d55e22d6da8156c29fb\kotlin-stdlib-common-1.3.40.jar;C:\Users\g\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\plugins\testng\lib\jcommander.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2017.1.2\lib\idea_rt.jar, hibernate.bytecode.use_reflection_optimizer=false, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=Service Pack 1, connection.pool_size=1, java.io.tmpdir=C:\Users\g\AppData\Local\Temp\, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, os.arch=amd64, java.awt.graphicsenv=sun.awt.Win32GraphicsEnvironment, java.ext.dirs=C:\Program Files\Java\jdk1.8.0_111\jre\lib\ext;C:\Windows\Sun\Java\lib\ext, user.dir=C:\Marta\e2eTesting\addressbook-web-tests, line.separator=
+, java.vm.name=Java HotSpot(TM) 64-Bit Server VM, file.encoding=UTF-8, java.specification.version=1.8, hibernate.show_sql=true, hibernate.connection.pool_size=1}
+1022 [main] DEBUG o.h.secure.spi.JaccIntegrator - Skipping JACC integration as it was not enabled
+1042 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.ete.addressbook.model.GroupData] is safe
+1042 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.ete.addressbook.model.GroupData
+1055 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.ete.addressbook.model.GroupData] is safe
+1055 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.ete.addressbook.model.GroupData
+1095 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.ete.addressbook.model.ContactData] is safe
+1095 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.ete.addressbook.model.ContactData
+1095 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - Not known whether passed class name [com.ete.addressbook.model.ContactData] is safe
+1095 [main] DEBUG o.h.b.i.ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : com.ete.addressbook.model.ContactData
+1102 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: com.ete.addressbook.model.GroupData
+1102 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select group_id from group_list where group_id =?
+1102 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select groupdata_.group_id, groupdata_.group_footer as group_fo2_1_, groupdata_.group_header as group_he3_1_, groupdata_.group_name as group_na4_1_ from group_list groupdata_ where groupdata_.group_id=?
+1102 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into group_list (group_footer, group_header, group_name, group_id) values (?, ?, ?, ?)
+1102 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update group_list set group_footer=?, group_header=?, group_name=? where group_id=?
+1102 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from group_list where group_id=?
+1120 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@773cbf4f]
+1120 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1120 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1120 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1120 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1130 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1132 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1135 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [NONE]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+1135 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3f28bd56]
+1135 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1135 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1135 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1135 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1135 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1135 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1135 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [READ]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+1135 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@19fe4644]
+1135 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1135 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1135 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1135 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1135 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1135 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1135 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [UPGRADE]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+1137 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5be067de]
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1137 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1137 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1137 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1137 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [UPGRADE_NOWAIT]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+1137 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18245eb0]
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1137 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1137 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1137 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1137 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [UPGRADE_SKIPLOCKED]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+1137 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@24fb6a80]
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1137 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1137 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1137 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1137 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [FORCE]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+1137 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@72a85671]
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1137 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1137 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1137 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1137 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [PESSIMISTIC_READ]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=? lock in share mode
+1137 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@18f20260]
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1137 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1137 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1137 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1140 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1140 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [PESSIMISTIC_WRITE]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+1140 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7a48e6e2]
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1140 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1140 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1140 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1140 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [PESSIMISTIC_FORCE_INCREMENT]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=? for update
+1140 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3a94964]
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1140 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1140 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1140 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1140 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [OPTIMISTIC]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+1140 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6d0b5baf]
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : footer
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : header
+1140 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : name
+1140 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1140 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1140 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.GroupData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.GroupData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.GroupData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.GroupData)
+          - SQL table alias mapping - groupdata0_
+          - alias suffix - 0_
+          - suffixed key columns - {group_id1_1_0_}
+
+1140 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.GroupData [OPTIMISTIC_FORCE_INCREMENT]: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+1152 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.ete.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+1152 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.ete.addressbook.model.GroupData: select groupdata0_.group_id as group_id1_1_0_, groupdata0_.group_footer as group_fo2_1_0_, groupdata0_.group_header as group_he3_1_0_, groupdata0_.group_name as group_na4_1_0_ from group_list groupdata0_ where groupdata0_.group_id=?
+1152 [main] DEBUG o.h.p.e.AbstractEntityPersister - Static SQL for entity: com.ete.addressbook.model.ContactData
+1152 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Version select: select id from addressbook where id =?
+1152 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Snapshot select: select contactdat_.id, contactdat_.address as address2_0_, contactdat_.email as email3_0_, contactdat_.email2 as email4_0_, contactdat_.email3 as email5_0_, contactdat_.firstname as firstnam6_0_, contactdat_.home as home7_0_, contactdat_.lastname as lastname8_0_, contactdat_.mobile as mobile9_0_, contactdat_.photo as photo10_0_, contactdat_.work as work11_0_ from addressbook contactdat_ where contactdat_.id=?
+1152 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Insert 0: insert into addressbook (address, email, email2, email3, firstname, home, lastname, mobile, photo, work, id) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+1152 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Update 0: update addressbook set address=?, email=?, email2=?, email3=?, firstname=?, home=?, lastname=?, mobile=?, photo=?, work=? where id=?
+1152 [main] DEBUG o.h.p.e.AbstractEntityPersister -  Delete 0: delete from addressbook where id=?
+1152 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@592e843a]
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1152 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1152 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1152 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1155 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1155 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [NONE]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+1155 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@423e4cbb]
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1155 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1155 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1155 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1155 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [READ]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+1155 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43b4fe19]
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1155 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1155 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1155 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1155 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [UPGRADE]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=? for update
+1155 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@1536602f]
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1155 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1155 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1155 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1155 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [UPGRADE_NOWAIT]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=? for update
+1155 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@2a1edad4]
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1155 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1155 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1155 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1157 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1157 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [UPGRADE_SKIPLOCKED]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=? for update
+1157 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44c79f32]
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1157 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1157 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1157 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1157 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [FORCE]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=? for update
+1157 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@235f4c10]
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1157 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1157 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1157 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1157 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [PESSIMISTIC_READ]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=? lock in share mode
+1157 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@c7a975a]
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1157 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1157 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1157 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1157 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1160 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [PESSIMISTIC_WRITE]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=? for update
+1160 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@757d6814]
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1160 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1160 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1160 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1160 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [PESSIMISTIC_FORCE_INCREMENT]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=? for update
+1160 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3c0fae6c]
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1160 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1160 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1162 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1162 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1162 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [OPTIMISTIC]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+1162 [main] DEBUG o.h.l.p.b.i.spaces.QuerySpacesImpl - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@52b56a3e]
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : address
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email2
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : email3
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : firstname
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : homePhone
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : lastname
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : mobilePhone
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : photo
+1162 [main] DEBUG o.h.p.w.spi.MetamodelGraphWalker - Visiting attribute path : workPhone
+1162 [main] DEBUG o.h.l.p.b.i.FetchStyleLoadPlanBuildingAssociationVisitationStrategy - Building LoadPlan...
+1162 [main] DEBUG o.h.l.p.e.i.LoadQueryJoinAndFetchProcessor - processing queryspace <gen:0>
+1162 [main] DEBUG o.h.l.p.b.spi.LoadPlanTreePrinter - LoadPlan(entity=com.ete.addressbook.model.ContactData)
+    - Returns
+       - EntityReturnImpl(entity=com.ete.addressbook.model.ContactData, querySpaceUid=<gen:0>, path=com.ete.addressbook.model.ContactData)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=com.ete.addressbook.model.ContactData)
+          - SQL table alias mapping - contactdat0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+
+1162 [main] DEBUG o.h.loader.entity.plan.EntityLoader - Static select for entity com.ete.addressbook.model.ContactData [OPTIMISTIC_FORCE_INCREMENT]: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+1162 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_MERGE on entity com.ete.addressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+1162 [main] DEBUG org.hibernate.loader.Loader - Static select for action ACTION_REFRESH on entity com.ete.addressbook.model.ContactData: select contactdat0_.id as id1_0_0_, contactdat0_.address as address2_0_0_, contactdat0_.email as email3_0_0_, contactdat0_.email2 as email4_0_0_, contactdat0_.email3 as email5_0_0_, contactdat0_.firstname as firstnam6_0_0_, contactdat0_.home as home7_0_0_, contactdat0_.lastname as lastname8_0_0_, contactdat0_.mobile as mobile9_0_0_, contactdat0_.photo as photo10_0_0_, contactdat0_.work as work11_0_0_ from addressbook contactdat0_ where contactdat0_.id=?
+1162 [main] DEBUG o.h.internal.SessionFactoryImpl - Instantiated session factory
+1380 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+1382 [main] DEBUG o.h.e.t.j.p.i.JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+1385 [main] DEBUG o.h.e.t.j.p.i.StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+1385 [main] DEBUG o.h.internal.NamedQueryRepository - Checking 0 named HQL queries
+1385 [main] DEBUG o.h.internal.NamedQueryRepository - Checking 0 named SQL queries
+1387 [main] DEBUG o.h.internal.SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6e9319f
+1387 [main] DEBUG o.h.internal.SessionFactoryRegistry - Registering SessionFactory: 03d89408-424a-401b-9b2a-52b87a502256 (<unnamed>)
+1387 [main] DEBUG o.h.internal.SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+1432 [main] DEBUG o.h.s.internal.StatisticsInitiator - Statistics initialized [enabled=false]
+1432 [main] DEBUG o.h.e.t.internal.TransactionImpl - begin
+1440 [main] DEBUG o.h.h.i.QueryTranslatorFactoryInitiator - QueryTranslatorFactory : org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory@790174f2
+1440 [main] INFO  o.h.h.i.QueryTranslatorFactoryInitiator - HHH000397: Using ASTQueryTranslatorFactory
+1462 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - parse() - HQL: from com.ete.addressbook.model.ContactData where deprecated = '0000-00-00'
+1470 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  \-[FROM] Node: 'from'
+    |     \-[RANGE] Node: 'RANGE'
+    |        \-[DOT] Node: '.'
+    |           +-[DOT] Node: '.'
+    |           |  +-[DOT] Node: '.'
+    |           |  |  +-[DOT] Node: '.'
+    |           |  |  |  +-[IDENT] Node: 'com'
+    |           |  |  |  \-[IDENT] Node: 'ete'
+    |           |  |  \-[IDENT] Node: 'addressbook'
+    |           |  \-[IDENT] Node: 'model'
+    |           \-[IDENT] Node: 'ContactData'
+    \-[WHERE] Node: 'where'
+       \-[EQ] Node: '='
+          +-[IDENT] Node: 'deprecated'
+          \-[QUOTED_STRING] Node: ''0000-00-00''
+
+1470 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+1487 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select << begin [level=1, statement=select]
+1502 [main] DEBUG o.h.h.internal.ast.tree.FromElement - FromClause{level=1} : com.ete.addressbook.model.ContactData (<no alias>) -> contactdat0_
+1507 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+1507 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - processQuery() :  ( SELECT ( FromClause{level=1} addressbook contactdat0_ ) ( where ( = deprecated '0000-00-00' ) ) )
+1512 [main] DEBUG o.h.hql.internal.ast.HqlSqlWalker - Derived SELECT clause created.
+1517 [main] DEBUG o.h.h.i.ast.util.JoinProcessor - Using FROM fragment [addressbook contactdat0_]
+1517 [main] DEBUG o.h.h.i.antlr.HqlSqlBaseWalker - select >> end [level=1, statement=select]
+1520 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (addressbook)
+    +-[SELECT_CLAUSE] SelectClause: '{derived select clause}'
+    |  +-[SELECT_EXPR] SelectExpressionImpl: 'contactdat0_.id as id1_0_' {FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=com.ete.addressbook.model.ContactData}}}
+    |  \-[SQL_TOKEN] SqlFragment: 'contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.email2 as email4_0_, contactdat0_.email3 as email5_0_, contactdat0_.firstname as firstnam6_0_, contactdat0_.home as home7_0_, contactdat0_.lastname as lastname8_0_, contactdat0_.mobile as mobile9_0_, contactdat0_.photo as photo10_0_, contactdat0_.work as work11_0_'
+    +-[FROM] FromClause: 'from' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[], fromElementByTableAlias=[contactdat0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'addressbook contactdat0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=null,role=null,tableName=addressbook,tableAlias=contactdat0_,origin=null,columns={,className=com.ete.addressbook.model.ContactData}}
+    \-[WHERE] SqlNode: 'where'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[IDENT] IdentNode: 'deprecated' {originalText=deprecated}
+          \-[QUOTED_STRING] LiteralNode: ''0000-00-00''
+
+1520 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+1527 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - HQL: from com.ete.addressbook.model.ContactData where deprecated = '0000-00-00'
+1527 [main] DEBUG o.h.h.i.ast.QueryTranslatorImpl - SQL: select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.email2 as email4_0_, contactdat0_.email3 as email5_0_, contactdat0_.firstname as firstnam6_0_, contactdat0_.home as home7_0_, contactdat0_.lastname as lastname8_0_, contactdat0_.mobile as mobile9_0_, contactdat0_.photo as photo10_0_, contactdat0_.work as work11_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+1527 [main] DEBUG o.h.hql.internal.ast.ErrorCounter - throwQueryException() : no errors
+1540 [main] DEBUG org.hibernate.SQL - select contactdat0_.id as id1_0_, contactdat0_.address as address2_0_, contactdat0_.email as email3_0_, contactdat0_.email2 as email4_0_, contactdat0_.email3 as email5_0_, contactdat0_.firstname as firstnam6_0_, contactdat0_.home as home7_0_, contactdat0_.lastname as lastname8_0_, contactdat0_.mobile as mobile9_0_, contactdat0_.photo as photo10_0_, contactdat0_.work as work11_0_ from addressbook contactdat0_ where deprecated='0000-00-00'
+1552 [main] DEBUG org.hibernate.loader.Loader - Result set row: 0
+1555 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.ete.addressbook.model.ContactData#94]
+1560 [main] DEBUG org.hibernate.loader.Loader - Result set row: 1
+1560 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.ete.addressbook.model.ContactData#121]
+1560 [main] DEBUG org.hibernate.loader.Loader - Result set row: 2
+1560 [main] DEBUG org.hibernate.loader.Loader - Result row: EntityKey[com.ete.addressbook.model.ContactData#122]
+1560 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.ete.addressbook.model.ContactData#94]
+1562 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.ete.addressbook.model.ContactData#94]
+1562 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.ete.addressbook.model.ContactData#121]
+1562 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.ete.addressbook.model.ContactData#121]
+1562 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Resolving associations for [com.ete.addressbook.model.ContactData#122]
+1562 [main] DEBUG o.h.engine.internal.TwoPhaseLoad - Done materializing entity [com.ete.addressbook.model.ContactData#122]
+1562 [main] DEBUG o.h.e.t.internal.TransactionImpl - committing
+1562 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Processing flush-time cascades
+1565 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Dirty checking collections
+1567 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 3 objects
+1567 [main] DEBUG o.h.e.i.AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+1567 [main] DEBUG o.h.internal.util.EntityPrinter - Listing entities:
+1567 [main] DEBUG o.h.internal.util.EntityPrinter - com.ete.addressbook.model.ContactData{email3=, email2=, firstname=marta, address=, mobilePhone=, homePhone=, photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, workPhone=, id=94, email=, lastname=ggg}
+1567 [main] DEBUG o.h.internal.util.EntityPrinter - com.ete.addressbook.model.ContactData{email3=, email2=, firstname=fafa, address=, mobilePhone=, homePhone=, photo=PHOTO;ENCODING=BASE64;TYPE=JPEG:/9j/4AAQSkZJRgABAQAAAQABAAD//gA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gNzUK/9sAQwAIBgYHBgUIBwcHCQkICgwUDQwLCwwZEhMPFB0aHx4dGhwcICQuJyAiLCMcHCg3KSwwMTQ0NB8nOT04MjwuMzQy/9sAQwEJCQkMCwwYDQ0YMiEcITIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIy/8AAEQgAlgCWAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/EAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/aAAwDAQACEQMRAD8A+f6KKKACiiigAoorovC/gXxF4xn2aNp0ksQOHuH+SJPqx4z7DJ9qAOdor6N8Ofs46dAqS+I9Vlupepgs/wB3GPYsfmYfQLXpek/DrwfoiqLHw7YKy9JJYvNf/vp8n9aAPiyG2nuW2wQSSn0RC38qsnRdVVdzaZeAepgb/Cvu+ONIkCRoqIOiqMAU6gD4CeN4mKyIyMOoYYNNr74urK1vY/Lu7aG4jP8ADLGHH5GuP1n4R+B9bVjLoUFtIekllmAg+uF+U/iDQB8b0V7p4n/ZyvLdXn8M6mt0o5FreYR/oHHyk/UL9a8a1fRNT0C/ay1axns7lf4JkxkeoPQj3HFAFCiiigAooooAKKKKACiiigAp0UUk0qRRI0kjsFVFGSxPQAdzRFFJNKkUSM8jsFVFGSxPQAdzX1L8JfhLB4TtYta1qJJdclXKIeVtAew/2/U9ug7kgHMfDr4CqUi1XxipycNHpqtjH/XUj/0Efieor3m1tbextY7a0gigt4xtSKJAqqPQAcCpqKACiiigAooooAKKKKACsrX/AA3pHijTmsNZsYrqA9N4+ZD6qw5U+4rVooA+UviR8GtR8HiXU9KaS/0Ucs2My24/2wOo/wBofiB38tr7+ZVdSrKGUjBBGQRXzZ8YvhGuieb4k8Owf8S0ndd2qD/j3J/jUf3PUfw/ToAeKUUUUAFFFFABRRXReBfC8vjHxhYaMm5YpX3TuP4Il5Y/XHA9yKAPXvgL8OlKr4x1WHJyV06Nx07GXH5hfxPoa9/qG1tYLG0htLaJYreBFjjjUYCqBgAfhU1ABRRRQAUUUUAFFFFABRRRQAUUUUAFNkjSaJ4pUV43UqyMMhgeoI9KdRQB8hfFz4fHwR4l8yzRv7HviZLU9fLP8UZPtnj2I9DXntfbPj/wnD408H3ukuFE5XzLWQ/wTL90/Q9D7E18UzQyW88kEyMksbFHRhgqQcEGgBlFFFABX0b+zj4cEGkal4jlT97cyfZYCR0jXBYj2LED/gFfOVfbHw60kaJ8O9CsQu1haJI4/wBt/nb9WNAHT0UUUAFch8SvGLeB/BlxqsMayXbusFsr/d8xs8n2ADHHfGK6+uK+Kfg+fxr4In06zK/bYZFubYMcBnUEbSe2QzD6kUAfLU/xC8Y3GoG+fxLqgn3bvkuWRR7BQQoHtjFfSfwc8fXXjjw3OupbTqdg6xzSKABKrAlXwOAThgcccZ74r5cn8Ma9bagbCbRr9bsNt8n7O+4n2GOfwr6b+CfgW+8HeG7q41WPydQ1J1d4M8xIoO0N/tfMxPpkd6APT6KKKACvAvjd8T9X0rW/+EY0K6ey8qNXu7iI4kLMMhFPVRgg5HJz7c++187fHX4datceIW8U6VaS3lvcRot0kKlnidQFDbRyVKgcjpg5oA8+8MfFTxX4b1WK6/ta7vrbcPOtbudpEkXuBuJ2n3H69K+wdPvodT021v7ckwXUKTRk9SrAEfoa+LvDHgPxD4r1WKysdOuFQsBLcSxlY4h3LMf5dT2r7P0uwi0rSbLToCTDaQJAhPXaihR+goAt0UUUAFfJvx18ODQ/iHNdwptt9UjF0uBwJOjj65G7/gVfWVeMftHaSLnwjpuqKuZLO78sn0SRTn9UX86APmeiiigCW2hNzdQwL1kdUH4nFffEcaxRJGgwiAKo9AK+ENFIXXdPZuguYyf++hX3jQAUUV5B8WPixrXgLxHa6bptjYTxT2izl7lXJDF3Uj5WHGFH50Aev0V8++B/jf4m8S+ONK0m/t9MitLqUxv5ELhvukjBLnuBX0FQAUUUUAFFFFABRRRQAUUVXvrj7Jp9zc8fuomk56cAmgCxRXy7F+0X4wT79lo0g94JAf0kr2r4V+NL/wAd+FZ9V1G2t7eVLt4FW3DBSoVDnknnLH8qAO4rgvjRai6+E+tjHzRrFKvttlQn9M13tcb8VyF+FviEnp9mx/48KAPjKiiigB0btFIsinDKQwPuK+9rK6S9sbe7jOY54lkX6MMj+dfA9fZHwj1ka38MdGlLZkt4vskg7gxnaM/8BCn8aAO3r59/aV0xvN0HVVX5SJbZ29Dwyj/0P8q+gq4b4ueGm8T/AA61C3hj33dri7twOpZM5A9ypYfU0AfJnhzVDofibS9VGcWd1HMQO4VgSPyzX3TFKk0SSxOHjdQysDwQehr4Dr6t+BvjNPEXg1NJuJc6hpKiFgTy8P8AA34D5T9B60AepUUUUAFFFFABRRRQAVyHxR1lND+G2uXJYK8ls1tH6lpPkGPpuJ/Cuvr5t/aE8ZpqGrW3hezl3Q2LeddlTwZiMKv/AAFSfxb2oA8Sr69+CemNpvws0suu2S6MlyR7Mx2n/vkLXyloekXOv67Y6TaLme7mWJeOmTyT7AZJ+lfc2n2MGmaba2Fsu23toUhjX0VQAP0FAFmvOvjjei0+FGqJnDXLwwr/AN/FY/opr0WvCP2k9ZCabouiI3zSyvdyKOwUbV/Pc35UAfO9FFFABXun7OXidbfUdR8MzvhbkfarYE/xqMOPqVwf+AGvC6v6Jq91oGt2erWT7bm0lWVPQ46g+xGQfY0AfeFFZXhvX7PxR4estZsGzBcxhtueUboyn3ByPwrVoA+RPjB4Efwd4skntYSNJ1BjLbMBxG3Vo/wPT2I9DXKeFfE+oeEPEFtrGmuBNEcMjfdlQ9Ub2P8Age1fZnirwxp3i/QLjSNTj3Qy8o6/eicdHU+o/wAR0NfHvjPwVq3gfWm0/Uosxtk29yo+SdPUH19R1H5UAfXXg3xppPjfRU1DTJRvAAnt2P7yBvRh/I9DXRV8JaHr+qeG9Tj1HSL2W0uk43oeGHowPDD2Ne9eE/2irC4jS38U2L2swwDd2ql429yn3l/Dd+FAHudFc9pnjvwprCK1j4h06UnohnVH/wC+Wwf0rWfVdOjTe9/aqn94zKB/OgC3RXH6z8UvBWhoxufEFpK4H+qtX89ifTCZx+OK8d8Z/tCahqMcln4XtW0+FuDdz4aYj/ZXkJ9eT9KAPRvir8VLTwXYSadp0qTa9MmEQci3B/jf39F79Tx1+T5ppbmeSeeRpJZGLu7nJZickk9zRNNLczvPPK8ssjFnkdizMT1JJ6mvSvhV8KrrxpfR6lqUbw6DC2WY/Kbkj+BPb1b8Bz0AO3/Z98CPCsnjDUISrOpisFYfwnh5Px+6Pbd6ive6jggitbeK3gjWKGJQkcaDAVQMAAemKkoAK+Nfit4nXxV8QdQvIX32kBFrbEHgomRkexYs3419C/GTxsvhHwdLb20u3VNSDQW4B5RcfPJ+AOB7kV8i0AFFFFABRRRQB6l8GviQPB+sHStTlI0W+cbmJ4t5egf6HgH8D25+rFZXUMrBlIyCDkEV8A17X8I/jF/Yiw+HfEkxOm8La3jcm39Fb/Y9D/D9OgB9KVma/wCHtK8T6VJpur2cdzbPzhuqH+8p6qfcVoxyJNEksTq8bgMrqchgehB7inUAfL/jX4B63ozyXXh0tq1jyfK4FxGPTHR/+A8+1eSXFvPaTvBcwyQzIcNHIpVlPuD0r77rL1jw3oniCMR6vpVpegDCmeIMy/Q9R+FAHwpRX1lf/AXwLeMWitLyzyc4t7liP/H91Z6/s5+DlfJvtaYf3TPHj/0XQB8u1oaRoeq6/eC00nT7i8nP8MKFse5PQD3NfVumfBPwJprq50hruRejXUzOP++chT+VdzY6fZaZarbWFpBa26/digjCKPwHFAHhvgT9n1YZItQ8YSLIyncunQtlf+2jjr9F49z0r3eCCG1t44LeJIoY1CpHGoVVA6AAdBUlFABWdruuWHhzRrnVdTnENrbruZu5PZQO5J4Ao1zXdN8OaTNqeq3SW1rEOWY8k9gB1JPYCvkv4lfEq+8faoAA9tpFux+zWuev+2/qx/IDgdyQDH8beLr3xt4muNXvMorfJBDnIhjHRR/MnuSa52iigAooooAKKKKACiiigD0L4ffFzWvBDJZyZv8AR882sjYMfqY2/h+nT6da+l/Cfj/w740tw+k36mcDL2kvyTJ9V7j3GR718TU+GaW3mSaCR4pUO5XRirKfUEdKAPvyivk3w58dfGGhqkN3NFq1uvG28H7wD2cYOfds16XpP7R3h65VV1TSr+ykPUxFZkH4/Kf0oA9norgrX40eALpRjX1ib+7Lbypj8SuP1q2fiv4EVcnxLZ49tx/pQB2VFedXvxx8A2inZq8l0w/hgtZD+rAD9a43Wf2k7JFZNE0GeVu0l7IEA/4Cuc/mKAPd6868bfGTw54RSS2t5V1TVFyBbW7gqh/236D6DJ9q+evE/wAVvF/ipXhvNTa3tH4NrZjykI9Dj5mHsSa4qgDovF3jbW/G2pfbNXudyqT5NvHxFCPRV/qck+tc7RRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQAUUUUAFFFFABRRRQB//Z, workPhone=, id=121, email=, lastname=fwafa}
+1567 [main] DEBUG o.h.internal.util.EntityPrinter - com.ete.addressbook.model.ContactData{email3=, email2=, firstname=fafa, address=, mobilePhone=, homePhone=, photo=PHOTO;ENCODING=BASE64;TYPE=JPEG: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, workPhone=, id=122, email=, lastname=fwafa}
