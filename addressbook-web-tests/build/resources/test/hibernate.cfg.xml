@@ -24,11 +24,9 @@
         <!-- Drop and re-create the database schema on startup -->
         <property name="hbm2ddl.auto">validate</property>
 
-
-
-
         <!-- Name the annotated entity class -->
         <mapping class="com.ete.addressbook.model.GroupData"/>
+        <mapping class="com.ete.addressbook.model.ContactData"/>
 
     </session-factory>
 
