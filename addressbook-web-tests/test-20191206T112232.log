@@ -1,8 +1,0 @@
-4286 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testBadGroupCreation with parameters []
-6156 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testBadGroupCreation
-6235 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 0'}]
-8378 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testGroupCreation
-8379 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 1'}]
-10690 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testGroupCreation
-10691 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testGroupCreation with parameters [GroupData{id='2147483647', name='test 2'}]
-13088 [main] INFO  com.ete.addressbook.tests.TestBase - Start test testGroupCreation
