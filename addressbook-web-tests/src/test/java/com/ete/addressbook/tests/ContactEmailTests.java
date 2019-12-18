@@ -1,9 +1,11 @@
 package com.ete.addressbook.tests;
 
 import com.ete.addressbook.model.ContactData;
+import com.ete.addressbook.model.Groups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.io.File;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
@@ -18,10 +20,15 @@ public class ContactEmailTests extends TestBase {
   @BeforeMethod
   public void ensurePreconditions() {
     app.goTo().homePage();
-    if (app.contact().all().size() == 0) {
-      app.contact().create(new ContactData().withFirstName("Pola").withLastName("G").withGroup("test1"), true);
-    }
+  if (app.contact().all().size() == 0) {
+    Groups groups = app.db().groups();
+    File photo = new File("src/test/resources/stru.png");
+    ContactData newContact = new ContactData().withFirstName("test_name").withLastName("test_surname").withPhoto(photo)
+            .inGroup(groups.iterator().next());
+    app.contact().create(newContact, true);
+   }
   }
+
 
   @Test
   public void testContactEmails() {

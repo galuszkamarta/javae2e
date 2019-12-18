@@ -1,6 +1,7 @@
 package com.ete.addressbook.appmanager;
 
 import com.ete.addressbook.model.ContactData;
+import com.ete.addressbook.model.Contacts;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,9 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
-import java.util.HashSet;
 import java.util.List;
-import java.util.Set;
 
 /**
  * Created by m on 2019-10-24.
@@ -33,7 +32,10 @@ public class ContactHelper extends HelperBase {
 
 
     if (creation) {
-      new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroup());
+      if (contactData.getGroups().size() > 0) {
+        Assert.assertTrue(contactData.getGroups().size() == 1);
+        new Select(driver.findElement(By.name("new_group"))).selectByVisibleText(contactData.getGroups().iterator().next().getName());
+      }
     } else {
       Assert.assertFalse(isElementPresent(By.name("new_group")));
     }
@@ -92,6 +94,7 @@ public class ContactHelper extends HelperBase {
   public void delete(ContactData contact) {
     selectContactById(contact.getId());
     deleteSelectedContact();
+    contactCache = null;
     click(By.linkText("home"));
   }
 
@@ -104,8 +107,13 @@ public class ContactHelper extends HelperBase {
     return driver.findElements(By.name("selected[]")).size();
   }
 
-  public Set<ContactData> all() {
-    Set<ContactData> contacts = new HashSet<ContactData>();
+  public Contacts contactCache = null;
+
+  public Contacts all() {
+    if (contactCache != null) {
+      return new Contacts(contactCache);
+    }
+    contactCache = new Contacts();
     List<WebElement> rows = driver.findElements(By.xpath("//tr[@name='entry']"));
     for (WebElement row : rows) {
       List<WebElement> cells = row.findElements(By.tagName("td"));
@@ -115,11 +123,12 @@ public class ContactHelper extends HelperBase {
       String address = cells.get(3).getText();
       String allEmails = cells.get(4).getText();
       String allPhones = cells.get(5).getText();
-      contacts.add(new ContactData().withId(id).withFirstName(firstname).withLastName(lastname)
+      contactCache.add(new ContactData().withId(id).withFirstName(firstname).withLastName(lastname)
               .withAddress(address).withAllEmails(allEmails).withAllPhones(allPhones));
     }
-    return contacts;
+    return new Contacts(contactCache);
   }
+
 
   public ContactData infoFromEditFrom(ContactData contact) {
     initContactModificationById(contact.getId());

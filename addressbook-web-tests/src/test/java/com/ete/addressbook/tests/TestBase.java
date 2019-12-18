@@ -3,7 +3,6 @@ package com.ete.addressbook.tests;
 import com.ete.addressbook.appmanager.ApplicationManager;
 import com.ete.addressbook.model.GroupData;
 import com.ete.addressbook.model.Groups;
-import org.hamcrest.CoreMatchers;
 import org.openqa.selenium.remote.BrowserType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +24,7 @@ import static org.hamcrest.Matchers.equalTo;
  */
 public class TestBase {
 
-  Logger logger = LoggerFactory.getLogger( TestBase.class);
+  Logger logger = LoggerFactory.getLogger(TestBase.class);
 
   protected static final ApplicationManager app
           = new ApplicationManager(System.getProperty("browser", BrowserType.CHROME));
@@ -41,12 +40,12 @@ public class TestBase {
   }
 
   @BeforeMethod
-  public void logTestStart(Method m, Object[] p){
+  public void logTestStart(Method m, Object[] p) {
     logger.info("Start test " + m.getName() + " with parameters " + Arrays.asList(p));
   }
 
   @AfterMethod(alwaysRun = true)
-  public void logTestStop(Method m){
+  public void logTestStop(Method m) {
     logger.info("Start test " + m.getName());
   }
 
@@ -55,7 +54,7 @@ public class TestBase {
   }
 
   public void verifyGroupLisyInUi() {
-    if (Boolean.getBoolean("verifyUI")){
+    if (Boolean.getBoolean("verifyUI")) {
       Groups dbGroups = app.db().groups();
       Groups uiGroups = app.group().all();
       assertThat(uiGroups, equalTo(dbGroups.stream()

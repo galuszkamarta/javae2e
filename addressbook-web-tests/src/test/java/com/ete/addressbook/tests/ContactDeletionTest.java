@@ -1,13 +1,15 @@
 package com.ete.addressbook.tests;
 
 import com.ete.addressbook.model.ContactData;
-import org.testng.Assert;
+import com.ete.addressbook.model.Contacts;
+import com.ete.addressbook.model.Groups;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.Set;
+import java.io.File;
 
-import static org.testng.Assert.assertEquals;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 /**
  * Created by m on 2019-10-24.
@@ -17,23 +19,30 @@ public class ContactDeletionTest extends TestBase {
   @BeforeMethod
   public void ensurePreconditions() {
     app.goTo().homePage();
-    if (app.contact().all().size() == 0) {
-      app.contact().create(new ContactData().withFirstName("Pola").withLastName("G").withGroup("test1"), true);
+    if (app.db().contacts().size() == 0) {
+      Groups groups = app.db().groups();
+      File photo = new File("src/test/resources/stru.png");
+      ContactData newContact = new ContactData().withFirstName("test_name").withLastName("test_surname").withPhoto(photo)
+          .inGroup(groups.iterator().next());
+      app.contact().create(newContact, true);
     }
   }
 
   @Test //(enabled = false)
-  public void testContactDeletion() {
-    Set<ContactData> before = app.contact().all();
+  public void testContactDeletion(){
+    Contacts before = app.db().contacts();
     ContactData deletedContact = before.iterator().next();
     app.contact().delete(deletedContact);
-    Set<ContactData> after = app.contact().all();
-    assertEquals(after.size(), before.size() - 1);
+    assertThat(app.contact().count(), equalTo(before.size() - 1));
+    Contacts after = app.db().contacts();
+    Contacts afterDeletion = before.without(deletedContact);
+    assertThat(after, equalTo(afterDeletion));
+    verifyGroupLisyInUi();
+  }
 
-    before.remove(deletedContact);
-    Assert.assertEquals(before, after);
+  public void verifyGroupLisyInUi() {
+
   }
 }
-
 
 

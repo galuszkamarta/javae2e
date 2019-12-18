@@ -7,7 +7,6 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.BrowserType;
 
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
@@ -16,6 +15,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by m on 2019-10-22.
  */
+
 public class ApplicationManager {
   private final Properties properties;
   WebDriver driver;
@@ -32,7 +32,7 @@ public class ApplicationManager {
   private DbHelper dbHelper;
 
 
-  public ApplicationManager(String browser){
+  public ApplicationManager(String browser) {
     this.browser = browser;
     properties = new Properties();
   }
@@ -43,7 +43,7 @@ public class ApplicationManager {
 
     dbHelper = new DbHelper();
 
-    if (browser.equals(BrowserType.FIREFOX)){
+    if (browser.equals(BrowserType.FIREFOX)) {
       driver = new FirefoxDriver();
     } else if (browser.equals(BrowserType.CHROME)) {
       driver = new ChromeDriver();
@@ -76,7 +76,7 @@ public class ApplicationManager {
     return contactHelper;
   }
 
-  public DbHelper db(){
+  public DbHelper db() {
     return dbHelper;
   }
 }
